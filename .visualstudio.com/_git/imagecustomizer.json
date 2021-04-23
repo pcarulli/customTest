@@ -1,6 +1,6 @@
 [
     {
-	"ScriptPath": "powershell\\process.ps1",
+	"ScriptPath": "powershellScripts\\custom.ps1",
 	"RestartRequiered": "False",
         "Name" : "test",
         "Description" : "Points to the test package"
