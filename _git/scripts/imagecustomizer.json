@@ -1,0 +1,10 @@
+[
+    {
+        "PackageName": "test",
+        "PackageSource" : "https://",
+        "PackageVersion" : "1.0.0",
+        "Name" : "my test package",
+        "Description" : "Points to the test package",
+        "Type" : "PackageFeed"
+    }
+]
