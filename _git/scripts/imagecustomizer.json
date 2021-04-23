@@ -1,7 +1,7 @@
 [
     {
         "PackageName": "test",
-        "PackageSource" : "https://",
+        "PackageSource" : "https://github.com/pcarulli/customTest/blob/main/_git/scripts/powershell/process.ps1",
         "PackageVersion" : "1.0.0",
         "Name" : "my test package",
         "Description" : "Points to the test package",
