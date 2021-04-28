@@ -1,8 +1,8 @@
 [
     {
-	"ScriptPath": "powershellScripts\\custom.ps1",
+	"ScriptPath": "\\powershellScripts\\custom.ps1",
+	"Type":"Powershell",
 	"RestartRequiered": "False",
-        "Name" : "test",
-        "Description" : "Points to the test package"
+        "Name" : "test"
     }
 ]

